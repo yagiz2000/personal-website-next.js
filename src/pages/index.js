@@ -1,12 +1,7 @@
-import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
-import { Button, Box, Container, useColorModeValue } from "@chakra-ui/react";
+import { Heading, Box, Container, useColorModeValue } from "@chakra-ui/react";
 import Layout from "@/layout";
-
-//import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import photo from "@/public/images/me.png";
 
 export default function Home() {
   return (
@@ -14,6 +9,7 @@ export default function Home() {
       <Layout>
         <main>
           <Container>
+            <Heading mb={5}>Yağız Ceritoğlu</Heading>
             <Box
               borderRadius="lg"
               mb={6}
@@ -21,8 +17,22 @@ export default function Home() {
               textAlign="center"
               bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
             >
-              Hello, I&apos;m an indie app developer based in Turkey!
+              Hello, I&apos;m an full stack developer based in Turkey!
             </Box>
+            <Container display="flex" justifyContent="center" mb={5}>
+              <Image
+                style={{
+                  borderRadius: "100%",
+                  width: "150px",
+                  maxWidth: "150px",
+                  objectFit: "cover",
+                  height: "150px",
+                }}
+                priority
+                src={photo}
+                alt="Yagizcer"
+              ></Image>
+            </Container>
           </Container>
         </main>
       </Layout>
