@@ -1,13 +1,14 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import { Button, Box, Container, useColorModeValue } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
-//import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
-
+const variants = {
+  hidden: { opacity: 0, x: 0, y: 20 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: 20 },
+};
 export default function Layout({ children }) {
   return (
     <>
@@ -17,10 +18,17 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Navbar></Navbar>
+      <Navbar></Navbar>
+      <motion.main
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        variants={variants}
+        transition={{ duration: 0.6, type: "easeInOut" }}
+      >
         <Container>{children}</Container>
-      </main>
+        <Footer></Footer>
+      </motion.main>
     </>
   );
 }
