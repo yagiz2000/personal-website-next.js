@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Heading, Box, Container, useColorModeValue } from "@chakra-ui/react";
 import Layout from "@/layout";
 import photo from "@/public/images/me.png";
+import TitledContent from "@/components/titled-content";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
               textAlign="center"
               bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
             >
-              Hello, I&apos;m an full stack developer based in Turkey!
+              Hello, I&apos;m an full stack developer based in Turkey, Istanbul
+              !
             </Box>
             <Container display="flex" justifyContent="center" mb={5}>
               <Image
@@ -33,6 +35,17 @@ export default function Home() {
                 alt="Yagizcer"
               ></Image>
             </Container>
+            <TitledContent title="Bio"></TitledContent>
+            <TitledContent title="Summary">
+              <p>sa</p>
+            </TitledContent>
+            <TitledContent title="Enjoys">
+              <p>
+                Travel 🧳, Reading 📚 , Listening 🎶 (also podcasts and people)
+                , Building 🧑🏻‍💻(software),playing 🎸 (begginer) motor sports 🏎️
+                (Tifosi), exercise 🏃🏻,🏋🏻,🚴🏻‍♂️,🏊🏻‍♂️ , video games 🎮,
+              </p>
+            </TitledContent>
           </Container>
         </main>
       </Layout>
