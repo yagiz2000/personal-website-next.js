@@ -14,10 +14,7 @@ export default function MobileMenu() {
     <>
       <Box display={{ base: "inline-block", md: "none" }}>
         <Menu>
-          <MenuButton
-            as={Button}
-            colorScheme={useColorModeValue("gray", "orange")}
-          >
+          <MenuButton as={Button}>
             <HamburgerIcon />
           </MenuButton>
           <MenuList>

@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import ThemeTogglerButton from "@/components/theme-toggler-button";
 import MobileMenu from "@/components/mobile-menu";
+import FlagMenu from "./flag-menu";
 
 export default function Navbar() {
   return (
@@ -27,8 +28,10 @@ export default function Navbar() {
           <Container
             display="flex"
             justifyContent="space-between"
+            bg="green.800"
+            color="white"
+            borderRadius="lg"
             alignItems="center"
-            bg="orange"
             maxW="container.md"
             p={2}
           >
@@ -49,6 +52,7 @@ export default function Navbar() {
 
               <ThemeTogglerButton></ThemeTogglerButton>
               <MobileMenu></MobileMenu>
+              <FlagMenu></FlagMenu>
             </Stack>
           </Container>
         </Box>
