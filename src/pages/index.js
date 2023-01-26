@@ -1,10 +1,27 @@
 import Image from "next/image";
-import { Heading, Box, Container, useColorModeValue } from "@chakra-ui/react";
+import {
+  Heading,
+  Box,
+  Container,
+  UnorderedList,
+  ListItem,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import Layout from "@/layout";
 import photo from "@/public/images/me.png";
 import TitledContent from "@/components/titled-content";
 
 export default function Home() {
+  const hobbiesList = [
+    "Travel 🧳",
+    "Read 📚",
+    "Listen 🎶 (also podcasts and people)",
+    "Build 🧑🏻‍💻 (software and systems)",
+    "Play 🎸 (begginer)",
+    "Cars and Motor Sports 🏎️ (Tifosi)",
+    "Exercise 🏃🏻 🏋🏻 🚴🏻‍♂️ 🏊🏻‍♂️",
+    "Video Games 🎮",
+  ];
   return (
     <>
       <Layout>
@@ -40,11 +57,13 @@ export default function Home() {
               <p>sa</p>
             </TitledContent>
             <TitledContent title="Enjoys">
-              <p>
-                Travel 🧳, Reading 📚 , Listening 🎶 (also podcasts and people)
-                , Building 🧑🏻‍💻(software),playing 🎸 (begginer) motor sports 🏎️
-                (Tifosi), exercise 🏃🏻,🏋🏻,🚴🏻‍♂️,🏊🏻‍♂️ , video games 🎮,
-              </p>
+              <UnorderedList>
+                {hobbiesList.map((hobby, i) => (
+                  <ListItem ml={4} key={i}>
+                    {hobby}
+                  </ListItem>
+                ))}
+              </UnorderedList>
             </TitledContent>
           </Container>
         </main>
