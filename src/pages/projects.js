@@ -1,12 +1,4 @@
-import {
-  Heading,
-  Box,
-  Container,
-  Stack,
-  UnorderedList,
-  ListItem,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Heading, Container, Stack } from "@chakra-ui/react";
 import Layout from "@/layout";
 import ProjectCard from "@/components/project-card";
 
