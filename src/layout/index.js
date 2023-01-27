@@ -20,7 +20,7 @@ export default function Layout({ children }) {
         variants={variants}
         transition={{ duration: 0.6, type: "easeInOut" }}
       >
-        <Container>{children}</Container>
+        <Container maxW="full">{children}</Container>
         <Footer></Footer>
       </motion.main>
     </>
