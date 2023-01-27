@@ -8,8 +8,8 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import Layout from "@/layout";
-import photo from "@/public/images/me.png";
 import TitledContent from "@/components/titled-content";
+import profilePhoto from "@/public/images/me.png";
 
 export default function Index() {
   const hobbiesList = [
@@ -40,15 +40,9 @@ export default function Index() {
             </Box>
             <Container display="flex" justifyContent="center" mb={5}>
               <Image
-                style={{
-                  borderRadius: "100%",
-                  width: "150px",
-                  maxWidth: "150px",
-                  objectFit: "cover",
-                  height: "150px",
-                }}
+                id="profilePhoto"
                 priority
-                src={photo}
+                src={profilePhoto}
                 alt="Yagizcer"
               ></Image>
             </Container>
