@@ -11,7 +11,7 @@ import Layout from "@/layout";
 import photo from "@/public/images/me.png";
 import TitledContent from "@/components/titled-content";
 
-export default function Home() {
+export default function Index() {
   const hobbiesList = [
     "Travel 🧳",
     "Read 📚",
