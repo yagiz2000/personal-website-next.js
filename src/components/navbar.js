@@ -1,15 +1,7 @@
 import Image from "next/image";
 import Head from "next/head";
 import NextLink from "next/link";
-import {
-  Button,
-  Box,
-  Container,
-  useColorModeValue,
-  Stack,
-  Text,
-  Link,
-} from "@chakra-ui/react";
+import { Box, Container, Stack, Link } from "@chakra-ui/react";
 import ThemeTogglerButton from "@/components/theme-toggler-button";
 import MobileMenu from "@/components/mobile-menu";
 import FlagMenu from "./flag-menu";
@@ -28,6 +20,7 @@ export default function Navbar() {
       <Box borderRadius="lg" mb={6} p={3}>
         <Container
           display="flex"
+          id="navbar"
           justifyContent="space-between"
           bg="green.800"
           color="white"
