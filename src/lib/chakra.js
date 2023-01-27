@@ -1,4 +1,13 @@
 import { extendTheme } from "@chakra-ui/react";
+import { mode } from "@chakra-ui/theme-tools";
+
+const styles = {
+  global: (props) => ({
+    body: {
+      bg: mode("orange.200", "gray.800")(props),
+    },
+  }),
+};
 
 const components = {
   Heading: {
@@ -16,4 +25,8 @@ const components = {
   },
 };
 
-export const theme = extendTheme({ components });
+const config = {
+  initialColorMode: "dark",
+};
+
+export const theme = extendTheme({ components, config, styles });
