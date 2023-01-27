@@ -20,7 +20,7 @@ export default function Experiences() {
             direction="row"
             justifyContent="space-evenly"
             wrap="wrap"
-            rowGap={5}
+            rowGap={7}
           >
             {projects.map((project, i) => (
               <ProjectCard key={i} project={project} />
