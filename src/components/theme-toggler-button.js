@@ -6,6 +6,8 @@ export default function ThemeTogglerButton() {
   return (
     <>
       <IconButton
+        _hover={{ bg: "none" }}
+        _expanded={{ bg: "none" }}
         bg={useColorModeValue("blackAlpha.500", "orange")}
         icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
         onClick={toggleColorMode}
