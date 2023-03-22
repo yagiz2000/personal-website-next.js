@@ -6,7 +6,7 @@ export default function ThemeTogglerButton() {
   return (
     <>
       <IconButton
-        bg={useColorModeValue("gray", "orange")}
+        bg={useColorModeValue("blackAlpha.500", "orange")}
         icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
         onClick={toggleColorMode}
       ></IconButton>
