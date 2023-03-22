@@ -5,7 +5,6 @@ import {
   MenuItem,
   MenuButton,
   Button,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
@@ -19,7 +18,6 @@ export default function MobileMenu() {
           </MenuButton>
           <MenuList>
             <MenuItem>Projects</MenuItem>
-            <MenuItem>Experiences</MenuItem>
           </MenuList>
         </Menu>
       </Box>
