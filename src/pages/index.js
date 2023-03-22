@@ -5,6 +5,7 @@ import {
   Container,
   UnorderedList,
   ListItem,
+  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Layout from "@/layout";
@@ -21,6 +22,25 @@ export default function Index() {
     "Cars and Motor Sports 🏎️ (Tifosi)",
     "Exercise 🏃🏻 🏋🏻 🚴🏻‍♂️ 🏊🏻‍♂️",
     "Video Games 🎮",
+  ];
+  const bioInfoList = [
+    { year: "2000", text: "Born in Izmir, Türkiye" },
+    {
+      year: "2018",
+      text: "Completed İzmir Anadolu Lisesi (High School Degree)",
+    },
+    {
+      year: "2018",
+      text: "Started ITU as a maritime engineering student",
+    },
+    {
+      year: "2020",
+      text: "Undergraduate transfer to physics engineering in ITU",
+    },
+    {
+      year: "2021",
+      text: "In September started working as Full Stack Developer at Gameflex",
+    },
   ];
   return (
     <>
@@ -46,7 +66,16 @@ export default function Index() {
                 alt="Yagizcer"
               ></Image>
             </Container>
-            <TitledContent title="Bio"></TitledContent>
+            <TitledContent title="Bio">
+              <UnorderedList>
+                {bioInfoList.map((bioInfo, i) => (
+                  <ListItem key={i}>
+                    <Text as="b"> {bioInfo.year}</Text>
+                    {bioInfo.text}
+                  </ListItem>
+                ))}
+              </UnorderedList>
+            </TitledContent>
             <TitledContent title="Summary">
               <p>sa</p>
             </TitledContent>
