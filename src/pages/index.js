@@ -67,11 +67,11 @@ export default function Index() {
               ></Image>
             </Container>
             <TitledContent title="Bio">
-              <UnorderedList>
+              <UnorderedList className="bio-info-list">
                 {bioInfoList.map((bioInfo, i) => (
-                  <ListItem key={i}>
-                    <Text as="b"> {bioInfo.year}</Text>
-                    {bioInfo.text}
+                  <ListItem key={i} className="bio-info-item">
+                    <Text className="bio-info-year">{bioInfo.year}</Text>
+                    <Text className="bio-info-text">{bioInfo.text}</Text>
                   </ListItem>
                 ))}
               </UnorderedList>

@@ -5,3 +5,19 @@
   object-fit: cover;
   height: 200px;
 }
+.bio-info-list{
+
+  .bio-info-item{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(24px, auto);
+    .bio-info-year{
+      grid-column: 1 ;
+      font-weight: bolder;
+      margin: 0 !important;
+    }
+    .bio-info-text{
+      grid-column: 2/9 ;
+    }
+  }
+}
