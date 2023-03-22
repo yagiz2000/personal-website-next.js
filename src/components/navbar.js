@@ -2,8 +2,9 @@ import Head from "next/head";
 import NextLink from "next/link";
 import { Box, Container, Stack, Link } from "@chakra-ui/react";
 import ThemeTogglerButton from "@/components/theme-toggler-button";
+import GithubIconButton from "@/components/github-icon-button";
 import MobileMenu from "@/components/mobile-menu";
-import FlagMenu from "./flag-menu";
+//import FlagMenu from "./flag-menu";
 import Logo from "./logo";
 
 export default function Navbar() {
@@ -38,11 +39,12 @@ export default function Navbar() {
               <Link as={NextLink} href="/projects">
                 Projects
               </Link>
-              <Link as={NextLink} href="#">
-                Expriences
-              </Link>
             </Stack>
+            <Link as={NextLink} href="https://github.com/yagiz2000">
+              <GithubIconButton />
+            </Link>
             <ThemeTogglerButton />
+
             <MobileMenu />
             {/*             <FlagMenu />
              */}
