@@ -2,7 +2,8 @@
   "labels": {
       "enjoys": "Enjoys",
       "summary":"Summary",
-      "bio":"Bio"
+      "bio":"Bio",
+      "projects":"Projects"
   },
   "sentences":{
     "introduction":"Hello, I'm an full stack developer based in Turkey, Istanbul !",
@@ -23,6 +24,31 @@
     "motorSports":"Cars and Motor Sports 🏎️ (Tifosi)",
     "exercise":"Exercise 🏃🏻 🏋🏻 🚴🏻‍♂️ 🏊🏻‍♂️",
     "videoGames":"Video Games 🎮"
+  },
+  "projects":{
+    "todolist":{
+      "name":"Microsoft Todo List Clone",
+      "description":"Microsoft todo list desktop app clone, there is no external css library for that project, styles written in pure css. Also it is not a pre written project from youtube or udemy tutorial"
+    },
+    "movieApp":{
+      "name":"Movie App",
+      "description":"A movie app for searching movies and criticize them out. App has authentication, account page. Also movie comments are real time triggered."
+    },
+    "reduxCrudApp":{
+      "name":"Redux Crud App",
+      "description":"An app for crud purposes. Aim of this project was used to best practice redux toolkit and being familiar with state management of react."
+    },
+    "galleryVue3":{
+      "name":"Gallery Vue 3(npm package)",
+      "description":"An npm package for handling images as gallery view in web apps. It is easy to use, lightweight and has simple implementation. Besides compatible with mobile."
+    },
+    "etsyScraper":{
+      "name":"Etsy Scraper",
+      "description":"An app for scraping product data from etsy.com urls. From given url script scrapes product's image price and name than writes to MongoDB."
+    },
+    "cryptoChatApp":{
+      "name":"Crypto Chat App",
+      "description":"An app for crypto currencies.  You can track prices for various periods and chat real time with other users."
+    }
   }
 }
-
