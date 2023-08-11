@@ -11,7 +11,6 @@ import {
 import Layout from "@/layout";
 import TitledContent from "@/components/titled-content";
 import { hobbiesList, bioInfoList } from "@/data/lists";
-import { summaryText } from "@/data/texts";
 import profilePhoto from "@/public/images/me.png";
 import i18n from "@/plugins/i18n";
 
@@ -51,7 +50,7 @@ export default function Index() {
               </UnorderedList>
             </TitledContent>
             <TitledContent title={t('labels.summary')}>
-              <p>{summaryText}</p>
+              <p>{t('sentences.summary')}</p>
             </TitledContent>
             <TitledContent title={t('labels.enjoys')}>
               <UnorderedList>
