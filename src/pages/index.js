@@ -13,8 +13,10 @@ import TitledContent from "@/components/titled-content";
 import { hobbiesList, bioInfoList } from "@/data/lists";
 import { summaryText } from "@/data/texts";
 import profilePhoto from "@/public/images/me.png";
+import i18n from "@/plugins/i18n";
 
 export default function Index() {
+  const {t} = i18n
   return (
     <>
       <Layout>
@@ -28,8 +30,7 @@ export default function Index() {
               textAlign="center"
               bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
             >
-              Hello, I&apos;m an full stack developer based in Turkey, Istanbul
-              !
+              {t('sentences.introduction')}
             </Box>
             <Container display="flex" justifyContent="center" mb={5}>
               <Image
@@ -39,7 +40,7 @@ export default function Index() {
                 alt="Yagizcer"
               ></Image>
             </Container>
-            <TitledContent title="Bio">
+            <TitledContent title={t('labels.bio')}>
               <UnorderedList className="bio-info-list">
                 {bioInfoList.map((bioInfo, i) => (
                   <ListItem key={i} className="bio-info-item">
@@ -49,10 +50,10 @@ export default function Index() {
                 ))}
               </UnorderedList>
             </TitledContent>
-            <TitledContent title="Summary">
+            <TitledContent title={t('labels.summary')}>
               <p>{summaryText}</p>
             </TitledContent>
-            <TitledContent title="Enjoys">
+            <TitledContent title={t('labels.enjoys')}>
               <UnorderedList>
                 {hobbiesList.map((hobby, i) => (
                   <ListItem ml={4} key={i}>

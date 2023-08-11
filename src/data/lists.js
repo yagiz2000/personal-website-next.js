@@ -1,30 +1,36 @@
+import i18n from "@/plugins/i18n";
+const {t} = i18n
 export const hobbiesList = [
-  "Travel 🧳",
-  "Read 📚",
-  "Listen 🎶 (also podcasts and people)",
-  "Build 🧑🏻‍💻 (software and systems)",
-  "Play 🎸 (begginer)",
-  "Cars and Motor Sports 🏎️ (Tifosi)",
-  "Exercise 🏃🏻 🏋🏻 🚴🏻‍♂️ 🏊🏻‍♂️",
-  "Video Games 🎮",
+  t('hobbies.travel'),
+  t('hobbies.read'),
+  t('hobbies.listen'),
+  t('hobbies.build'),
+  t('hobbies.play'),
+  t('hobbies.motorSports'),
+  t('hobbies.exercise'),
+  t('hobbies.videoGames')
 ];
 
 export const bioInfoList = [
-  { year: "2000", text: "Born in Izmir, Türkiye" },
+  { year: "2000", text: t('sentences.2000Text')},
   {
     year: "2018",
-    text: "Completed İzmir Anadolu Lisesi (High School Degree)",
+    text:  t('sentences.2018Text1'),
   },
   {
     year: "2018",
-    text: "Started ITU as a maritime engineering student",
+    text:  t('sentences.2018Text2'),
   },
   {
     year: "2020",
-    text: "Undergraduate transfer to physics engineering in ITU",
+    text:  t('sentences.2020Text'),
   },
   {
     year: "2021",
-    text: "In September started working as Full Stack Developer at Gameflex",
+    text:  t('sentences.2021Text'),
   },
+  {
+    year:"2023",
+    text:  t('sentences.2023Text'),
+  }
 ];
