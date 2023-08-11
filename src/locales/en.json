@@ -1,0 +1,27 @@
+{
+  "labels": {
+      "enjoys": "Enjoys",
+      "summary":"Summary",
+      "bio":"Bio"
+  },
+  "sentences":{
+    "introduction":"Hello, I'm an full stack developer based in Turkey, Istanbul !",
+    "2000Text":"Born in Izmir, Türkiye",
+    "2018Text1":"Completed İzmir Anadolu Lisesi (High School Degree)",
+    "2018Text2":"Started ITU as a maritime engineering student",
+    "2020Text":"Undergraduate transfer to physics engineering in ITU",
+    "2021Text":"In September started working as Full Stack Developer at Gameflex",
+    "2023Text": "In August started working as Mid-Level Developer at Chex"
+  },
+  "hobbies":{
+    "trave":"Travel 🧳",
+    "read":"Read 📚",
+    "listen":"Listen 🎶 (also podcasts and people)",
+    "build":"Build 🧑🏻‍💻 (software and systems)",
+    "play":"Play 🎸 (begginer)",
+    "motorSports":"Cars and Motor Sports 🏎️ (Tifosi)",
+    "exercise":"Exercise 🏃🏻 🏋🏻 🚴🏻‍♂️ 🏊🏻‍♂️",
+    "videoGames":"Video Games 🎮"
+  }
+}
+
