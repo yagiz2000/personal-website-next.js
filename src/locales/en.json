@@ -1,54 +1,56 @@
 {
   "labels": {
-      "enjoys": "Enjoys",
-      "summary":"Summary",
-      "bio":"Bio",
-      "projects":"Projects"
+    "enjoys": "Enjoys",
+    "summary": "Summary",
+    "bio": "Bio",
+    "projects": "Projects",
+    "and": "and"
   },
-  "sentences":{
-    "introduction":"Hello, I'm an full stack developer based in Turkey, Istanbul !",
-    "2000Text":"Born in Izmir, Türkiye",
-    "2018Text1":"Completed İzmir Anadolu Lisesi (High School Degree)",
-    "2018Text2":"Started ITU as a maritime engineering student",
-    "2020Text":"Undergraduate transfer to physics engineering in ITU",
-    "2021Text":"In September started working as Full Stack Developer at Gameflex",
+  "sentences": {
+    "introduction": "Hello, I'm an full stack developer based in Turkey, Istanbul !",
+    "2000Text": "Born in Izmir, Türkiye",
+    "2018Text1": "Completed İzmir Anadolu Lisesi (High School Degree)",
+    "2018Text2": "Started ITU as a maritime engineering student",
+    "2020Text": "Undergraduate transfer to physics engineering in ITU",
+    "2021Text": "In September started working as Full Stack Developer at Gameflex",
     "2023Text": "In August started working as Mid-Level Developer at Chex",
-    "summary":"I am a final year physics engineering student and a full-stack developer based in Istanbul (Izmir), Türkiye. Since the beginning of 2021, I have been focusing on improving my skills in web development, particularly in the areas of JavaScript. With experience gained through internships, projects, and school teams, I landed a full-time job in October 2021. I am currently working at Chex"
+    "summary": "I am a final year physics engineering student and a full-stack developer based in Istanbul (Izmir), Türkiye. Since the beginning of 2021, I have been focusing on improving my skills in web development, particularly in the areas of JavaScript. With experience gained through internships, projects, and school teams, I landed a full-time job in October 2021. I am currently working at Chex",
+    "developedWith": "Developed with"
   },
-  "hobbies":{
-    "trave":"Travel 🧳",
-    "read":"Read 📚",
-    "listen":"Listen 🎶 (also podcasts and people)",
-    "build":"Build 🧑🏻‍💻 (software and systems)",
-    "play":"Play 🎸 (begginer)",
-    "motorSports":"Cars and Motor Sports 🏎️ (Tifosi)",
-    "exercise":"Exercise 🏃🏻 🏋🏻 🚴🏻‍♂️ 🏊🏻‍♂️",
-    "videoGames":"Video Games 🎮"
+  "hobbies": {
+    "travel": "Travel 🧳",
+    "read": "Read 📚",
+    "listen": "Listen 🎶 (also podcasts and people)",
+    "build": "Build 🧑🏻‍💻 (software and systems)",
+    "play": "Play 🎸 (begginer)",
+    "motorSports": "Cars and Motor Sports 🏎️ (Tifosi)",
+    "exercise": "Exercise 🏃🏻 🏋🏻 🚴🏻‍♂️ 🏊🏻‍♂️",
+    "videoGames": "Video Games 🎮"
   },
-  "projects":{
-    "todolist":{
-      "name":"Microsoft Todo List Clone",
-      "description":"Microsoft todo list desktop app clone, there is no external css library for that project, styles written in pure css. Also it is not a pre written project from youtube or udemy tutorial"
+  "projects": {
+    "todolist": {
+      "name": "Microsoft Todo List Clone",
+      "description": "Microsoft todo list desktop app clone, there is no external css library for that project, styles written in pure css. Also it is not a pre written project from youtube or udemy tutorial"
     },
-    "movieApp":{
-      "name":"Movie App",
-      "description":"A movie app for searching movies and criticize them out. App has authentication, account page. Also movie comments are real time triggered."
+    "movieApp": {
+      "name": "Movie App",
+      "description": "A movie app for searching movies and criticize them out. App has authentication, account page. Also movie comments are real time triggered."
     },
-    "reduxCrudApp":{
-      "name":"Redux Crud App",
-      "description":"An app for crud purposes. Aim of this project was used to best practice redux toolkit and being familiar with state management of react."
+    "reduxCrudApp": {
+      "name": "Redux Crud App",
+      "description": "An app for crud purposes. Aim of this project was used to best practice redux toolkit and being familiar with state management of react."
     },
-    "galleryVue3":{
-      "name":"Gallery Vue 3(npm package)",
-      "description":"An npm package for handling images as gallery view in web apps. It is easy to use, lightweight and has simple implementation. Besides compatible with mobile."
+    "galleryVue3": {
+      "name": "Gallery Vue 3(npm package)",
+      "description": "An npm package for handling images as gallery view in web apps. It is easy to use, lightweight and has simple implementation. Besides compatible with mobile."
     },
-    "etsyScraper":{
-      "name":"Etsy Scraper",
-      "description":"An app for scraping product data from etsy.com urls. From given url script scrapes product's image price and name than writes to MongoDB."
+    "etsyScraper": {
+      "name": "Etsy Scraper",
+      "description": "An app for scraping product data from etsy.com urls. From given url script scrapes product's image price and name than writes to MongoDB."
     },
-    "cryptoChatApp":{
-      "name":"Crypto Chat App",
-      "description":"An app for crypto currencies.  You can track prices for various periods and chat real time with other users."
+    "cryptoChatApp": {
+      "name": "Crypto Chat App",
+      "description": "An app for crypto currencies.  You can track prices for various periods and chat real time with other users."
     }
   }
 }

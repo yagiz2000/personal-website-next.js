@@ -1,0 +1,56 @@
+{
+  "labels": {
+    "enjoys": "Hobilerim",
+    "summary": "Özet",
+    "bio": "Bio",
+    "projects": "Projelerim",
+    "and": "ve"
+  },
+  "sentences": {
+    "introduction": "Merhaba, Full stack developer based in Turkey, Istanbul !",
+    "2000Text": "Izmir'de dünyaya geldim.",
+    "2018Text1": "İzmir Anadolu Lisesi'nden mezun oldum. ",
+    "2018Text2": "İTÜ'de Gemi Makineleri İşletme Mühendisliğine başladım.",
+    "2020Text": "İTÜ'de Fizik Mühendisliğine yatay geçiş yaptım.",
+    "2021Text": "Eylül ayında Full Stack Developer olarak Gameflex şirketinde çalışmaya başladım.",
+    "2023Text": "Ağustos ayında  Mid-Level Software Developer olarak Chex şirketinde çalışmaya başladım",
+    "summary": "Fizik mühendisliği son sınıf öğrencisiyim ve aynı zamanda full stack developer olarak çalışmaktayım. 2021'in başındab beri web ve yazılım alanında kendimi geliştirmeye başladım. Özellikle javascript eko sistemine ağırlık verdim. Staj, projeler ve okul kulüplerinden kazandığım deneyimler sayesinde 2021'in Eylül ayında tam zamanlı full stack developer olarak işe girdim. Şu anda Chex şirketinde çalışmaktayım.",
+    "developedWith": "Kullanılan teknolojiler"
+  },
+  "hobbies": {
+    "travel": "Seyahet etmek 🧳",
+    "read": "Okumak 📚",
+    "listen": "Dinlemek 🎶 (podcast'ler ve insanlar da dahil)",
+    "build": "İşleyen Bir Sistem Tasarlamak 🧑🏻‍💻 (yazılım and sistemler)",
+    "play": "🎸 (Başlangıç seviyesi)",
+    "motorSports": "Arabalar ve Motor Sporları 🏎️ (Tifosi)",
+    "exercise": "Egzersiz Yapmak 🏃🏻 🏋🏻 🚴🏻‍♂️ 🏊🏻‍♂️",
+    "videoGames": "Oyun Oynamak 🎮"
+  },
+  "projects": {
+    "todolist": {
+      "name": "Microsoft Todo List Clone",
+      "description": "Microsoft todo list'in masaüstü uygulamasını clone'lamaya çalıştım. Hiçbir css framework'ü kullanmadan yapılmış bir projedir, tamamen css ile yazılmıştır. Ayrıca herhangi bir youtube veya udemy kursundaki kodlardan etkilenerek yazılmamıştır."
+    },
+    "movieApp": {
+      "name": "Movie App",
+      "description": "Üyelik sisteminin bulunduğu filmlerin listelendiği ve yorumlandığı bir uygulamadır. Ayrıca film altındaki yorumlar gerçek zamanlı olarak get edilmektedir."
+    },
+    "reduxCrudApp": {
+      "name": "Redux Crud App",
+      "description": "Crud işlemleri için geliştirdiğim uygulamadır. Bunu geliştirirken amacım redux toolkit'i deneyimlemekti."
+    },
+    "galleryVue3": {
+      "name": "Gallery Vue 3(npm package)",
+      "description": "Hızlı ve düşük hacimli bir npm paketidir. Temel amacı uygulamadı fotoğrafları galeri şeklinde göstermektir. Mobile ile de uyumludur."
+    },
+    "etsyScraper": {
+      "name": "Etsy Scraper",
+      "description": "Etsy'deki ürünlerin isim, fiyat ve resimlerini scrape eden bir uygulamadır. Bunları da mongodb'de tutmaktayım."
+    },
+    "cryptoChatApp": {
+      "name": "Crypto Chat App",
+      "description": "Crypto paraları belli periyotlarla değişimini izlemek için yapılmış bir uygulamadır. Realtime olarak chat özelliği de bulunmaktadır."
+    }
+  }
+}
