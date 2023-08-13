@@ -1,19 +1,31 @@
-import { useState } from "react";
-import { Box, Button, Stack } from "@chakra-ui/react";
+import { useState, useMemo } from "react";
+import { Menu, MenuItem, Button, MenuButton, MenuList } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 export default function FlagMenu() {
-  const [flag, setFlag] = useState("Tr");
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language || "en");
+
+  const onChangeLangue = (lang) => {
+    i18n.changeLanguage(lang);
+    setLanguage(lang);
+  };
 
   return (
     <>
-      <Stack direction="row">
-        <Button className="flag-button" fontSize="25">
-          🇹🇷
-        </Button>
-        <Button className="flag-button" fontSize="25">
-          🇬🇧
-        </Button>
-      </Stack>
+      <Menu>
+        <MenuButton as={Button} fontSize="32">
+          {language === "tr" ? "🇹🇷" : "🇬🇧"}
+        </MenuButton>
+        <MenuList>
+          <MenuItem fontSize="32" onClick={() => onChangeLangue("tr")}>
+            🇹🇷
+          </MenuItem>
+          <MenuItem fontSize="32" onClick={() => onChangeLangue("en")}>
+            🇬🇧
+          </MenuItem>
+        </MenuList>
+      </Menu>
     </>
   );
 }

@@ -1,13 +1,15 @@
 import Head from "next/head";
 import NextLink from "next/link";
 import { Box, Container, Stack, Link } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 import ThemeTogglerButton from "@/components/theme-toggler-button";
 import GithubIconButton from "@/components/github-icon-button";
 import MobileMenu from "@/components/mobile-menu";
-//import FlagMenu from "./flag-menu";
+import FlagMenu from "./flag-menu";
 import Logo from "./logo";
 
-export default function Navbar() {
+export default function Navbar () {
+  const { t } = useTranslation()
   return (
     <>
       <Head>
@@ -37,7 +39,7 @@ export default function Navbar() {
               alignItems="center"
             >
               <Link as={NextLink} href="/projects">
-                Projects
+                {t('labels.projects')}
               </Link>
             </Stack>
             <Link as={NextLink} href="https://github.com/yagiz2000">
@@ -46,8 +48,7 @@ export default function Navbar() {
             <ThemeTogglerButton />
 
             <MobileMenu />
-            {/*             <FlagMenu />
-             */}
+            <FlagMenu />
           </Stack>
         </Container>
       </Box>

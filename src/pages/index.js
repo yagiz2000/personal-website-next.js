@@ -8,14 +8,15 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
+import useStaticLists from "@/hooks/useStaticLists";
 import Layout from "@/layout";
 import TitledContent from "@/components/titled-content";
-import { hobbiesList, bioInfoList } from "@/data/lists";
 import profilePhoto from "@/public/images/me.png";
-import i18n from "@/plugins/i18n";
 
 export default function Index() {
-  const {t} = i18n
+  const { t } = useTranslation();
+  const { hobbiesList, bioInfoList } = useStaticLists();
   return (
     <>
       <Layout>
@@ -29,7 +30,7 @@ export default function Index() {
               textAlign="center"
               bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
             >
-              {t('sentences.introduction')}
+              {t("sentences.introduction")}
             </Box>
             <Container display="flex" justifyContent="center" mb={5}>
               <Image
@@ -39,7 +40,7 @@ export default function Index() {
                 alt="Yagizcer"
               ></Image>
             </Container>
-            <TitledContent title={t('labels.bio')}>
+            <TitledContent title={t("labels.bio")}>
               <UnorderedList className="bio-info-list">
                 {bioInfoList.map((bioInfo, i) => (
                   <ListItem key={i} className="bio-info-item">
@@ -49,10 +50,10 @@ export default function Index() {
                 ))}
               </UnorderedList>
             </TitledContent>
-            <TitledContent title={t('labels.summary')}>
-              <p>{t('sentences.summary')}</p>
+            <TitledContent title={t("labels.summary")}>
+              <p>{t("sentences.summary")}</p>
             </TitledContent>
-            <TitledContent title={t('labels.enjoys')}>
+            <TitledContent title={t("labels.enjoys")}>
               <UnorderedList>
                 {hobbiesList.map((hobby, i) => (
                   <ListItem ml={4} key={i}>
