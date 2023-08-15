@@ -8,7 +8,6 @@ export default function Logo() {
       <Link href="/" id="navbarLogo">
         <Stack direction="row" alignItems="center">
           <Image alt="apple-emoji" width={60} height={60} src={appleEmoji} />
-          <Text fontWeight="bold">Yağız Ceritoğlu</Text>
         </Stack>
       </Link>
     </>
