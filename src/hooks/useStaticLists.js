@@ -35,9 +35,19 @@ export default function useStaticLists() {
       year: "2023",
       text: t("sentences.2023Text"),
     },
+    {
+      year:'2024',
+      text:t("sentences.2024Text")
+    }
   ];
 
   const projects = [
+    {
+      name:t('projects.cssConverter.name'),
+      imgSrc:"https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTA0Z2pub2dxZnpnZm5xeXN6YzJ6Y2VlaWdiZzZzaHpyaGhhZmpjdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WimnOKnhI5YLI9uyWT/giphy.gif",
+      description:t('projects.cssConverter.description'),
+      sourceCodeUrl:"https://github.com/yagiz2000/jsx-css-converter"
+    },
     {
       name: t("projects.todolist.name"),
       imgSrc: "https://media3.giphy.com/media/EloK5affruM9NQzQvZ/giphy.gif",
@@ -75,6 +85,7 @@ export default function useStaticLists() {
       description: t("projects.cryptoChatApp.description"),
       sourceCodeUrl: "https://github.com/yagiz2000/crypto-chat-app",
     },
+   
   ];
   return { hobbiesList, bioInfoList, projects };
 }

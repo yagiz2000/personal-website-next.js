@@ -14,7 +14,8 @@
     "2020Text": "İTÜ'de Fizik Mühendisliğine yatay geçiş yaptım.",
     "2021Text": "Eylül ayında Full Stack Developer olarak Gameflex şirketinde çalışmaya başladım.",
     "2023Text": "Ağustos ayında  Mid-Level Software Developer olarak Chex şirketinde çalışmaya başladım",
-    "summary": "Fizik mühendisliği son sınıf öğrencisiyim ve aynı zamanda full stack developer olarak çalışmaktayım. 2021'in başındab beri web ve yazılım alanında kendimi geliştirmeye başladım. Özellikle javascript eko sistemine ağırlık verdim. Staj, projeler ve okul kulüplerinden kazandığım deneyimler sayesinde 2021'in Eylül ayında tam zamanlı full stack developer olarak işe girdim. Şu anda Chex şirketinde çalışmaktayım.",
+    "2024Text":"Şubat ayında react native developer olarak Stealth modda olan bir startup'ta çalışmaya başladım. Ayrıca lisans eğitimimi Haziran ayında tamamladım.",
+    "summary": "2021'de web ve yazılım alanında kendimi geliştirmeye başladım. Özellikle javascript eko sistemine ağırlık verdim. Staj, projeler ve okul kulüplerinden kazandığım deneyimler sayesinde 2021'in Eylül ayında tam zamanlı full stack developer olarak işe girdim. Şu anda stealth modda olan bir start-up'ta react native developer olarak çalışmaktayım.",
     "developedWith": "Kullanılan teknolojiler"
   },
   "hobbies": {
@@ -51,6 +52,11 @@
     "cryptoChatApp": {
       "name": "Crypto Chat App",
       "description": "Crypto paraları belli periyotlarla değişimini izlemek için yapılmış bir uygulamadır. Realtime olarak chat özelliği de bulunmaktadır."
+    },
+    "cssConverter":{
+      "name":"Jsx To Css Converter (vscode extension)",
+      "description":"Jsx dosyalarını css'e çeviren bir vscode eklentisidir. Eklenti jsx dosyasındaki inline style'larını css kodlarına çevirir."
     }
+
   }
 }
