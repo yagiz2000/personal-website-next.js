@@ -14,7 +14,8 @@
     "2020Text": "Undergraduate transfer to physics engineering in ITU",
     "2021Text": "In September started working as Full Stack Developer at Gameflex",
     "2023Text": "In August started working as Mid-Level Developer at Chex",
-    "summary": "I am a final year physics engineering student and a full-stack developer based in Istanbul (Izmir), Türkiye. Since the beginning of 2021, I have been focusing on improving my skills in web development, particularly in the areas of JavaScript. With experience gained through internships, projects, and school teams, I landed a full-time job in October 2021. I am currently working at Chex",
+    "2024Text":"I started working as a React Native developer at a stealth-mode startup in February. Additionally, I completed my undergraduate degree in June.",
+    "summary": "I began developing myself in the field of web and software development in 2021, focusing particularly on the JavaScript ecosystem. Thanks to the experiences I gained through internships, projects, and school clubs, I started working full-time as a full stack developer in September 2021. I am currently working as a React Native developer at a stealth-mode startup.",
     "developedWith": "Developed with"
   },
   "hobbies": {
@@ -51,6 +52,10 @@
     "cryptoChatApp": {
       "name": "Crypto Chat App",
       "description": "An app for crypto currencies.  You can track prices for various periods and chat real time with other users."
+    },
+    "cssConverter":{
+      "name":"Jsx To Css Converter (vscode extension)",
+      "description":"An vscode extension that converts inline jsx styles to raw css codes."
     }
   }
 }
